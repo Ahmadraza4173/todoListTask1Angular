@@ -1,0 +1,131 @@
+/* for All */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: black;
+}
+html{
+    font-size: 62.5%;
+    /* IN RESPONSIVE WE WILL CHANGE THIS FONT SIZE THUS REM WILL DECREASE */
+}
+/* /////////////////////////////////////////////////////////// */
+
+.container{
+    background-color: rgb(255, 113, 43);
+    max-width:130rem;
+    margin: 6rem auto;
+    padding: 3rem 0;
+    align-content: center;
+    justify-content: center;
+    transition: all 600ms;
+}
+.container:hover{
+    box-shadow: 5px 6px 10px 0 rgb(104, 97, 97);
+}
+.OuterSection{
+    border: 1rem white solid;
+    margin: 4rem;
+}
+.Block{
+    display: block;
+}
+.Flex{
+    display: flex;
+}
+.Logo{
+    font-size: 4rem;
+    align-self: center;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns:2fr 3fr;
+    column-gap: 5rem;
+    /* width: 100rem; */
+    border: 0.5rem white solid;
+    margin: 0rem 3rem;
+    padding:2rem 0rem;
+    transition: all 400ms;
+}
+.headTodo{
+    font-size: 3rem;
+
+}
+.Todo{
+
+    align-self: center;
+    background-color: white;
+    padding:3rem;
+    margin:0rem 3rem;
+    text-align: center;
+    background-color:  rgb(236, 241, 244);
+    border-radius: 0.5rem;
+}
+.Todo:hover{
+    box-shadow: 0.5rem 0.6rem 1rem 0 rgb(104, 97, 97);
+}
+.form{
+    align-items: center;
+    position: relative;
+}
+h1{
+    color: rgb(246, 175, 9);
+}
+.TodoInput{
+    height: 35px;
+    width: 85%;
+    border: none;
+    padding-left: 2rem;
+}
+.TodoInput:hover{
+    box-shadow: 2px 2px 5px lightblue;
+}
+.TodoButton{
+    margin-left: 80%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(246, 175, 9);
+    color: black;
+    border: none;
+    height: 2.4rem;
+    width: 2.4rem;
+    z-index: 1;
+    font-size: 2rem;
+}
+.TodoButton:hover{
+    color: white;
+    text-shadow: 2px rgb(236, 229, 229);
+}
+.todoUl{
+    padding: 0px;
+}
+.todoLi{
+    list-style: none;
+    font-size: 1rem;
+    height: 35px;
+    width: 100%;   
+    background-color: white;
+    border-left: 4px rgb(246, 175, 9) solid;
+    border-right: 4px rgb(246, 175, 9) solid;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.delBtn{
+    align-self: center;
+}
+
+/* ////////////////////////// MEDIA QUERIES ///////////////////////////////////////*/
+@media(max-width: 800px){
+.grid{
+    display: block;
+}
+
+}

@@ -1,0 +1,28 @@
+
+<p>todo works!</p>
+<section class="container">
+	<div class="grid">
+
+		<h2 class="Block Logo  Inl">Logo Angular</h2>
+		<div class="Todo Block">
+			<h1 class="headTodo">Todo List App</h1>
+			<div class="Flex form">
+				<input
+				 #todoInput 
+				 required 
+				 type="text" 
+				 placeholder="Add Todo" 
+				 class="TodoInput" 
+				 />
+				<button id="todoBtn" type="button" class="TodoButton" (click)="addTask(todoInput.value)"><i class="bi bi-plus"></i></button>
+			</div>
+			<ul class="todoUl" id="todoUl" *ngFor="let item of list">
+				<li class="todoLi" #AddTodoList>
+					<div class="col-9 text-light h3">{{item.name}}</div>
+
+					<i (click)="removeTask(item.id)" #de class="bi bi-trash-fill delBtn"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
